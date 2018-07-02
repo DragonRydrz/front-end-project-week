@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 export const ADD_NEW_NOTE = 'ADD_NEW_NOTE';
-const host = 'https://ajlnbe.herokuapp.com/api';
+const host = 'http://159.89.34.14';
 
 export const newNote = data => dispatch => {
   if (data.title) {

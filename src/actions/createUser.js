@@ -2,11 +2,11 @@ import axios from 'axios';
 
 export const CREATE_USER = 'CREATE_USER';
 
-const host = 'https://ajlnbe.herokuapp.com/api/register';
+const host = 'http://159.89.34.14';
 
 export const createUser = data => dispatch => {
   axios
-    .post(host, data)
+    .post(`${host}/api/register`, data)
     .then(response => {
       const token = response.data.token;
       const user = response.data.user;
